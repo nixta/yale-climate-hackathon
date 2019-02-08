@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8851CCEA1FC5F2D30058CFBE /* ArcGIS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8851CCE91FC5F2D30058CFBE /* ArcGIS.framework */; };
+		8851CCEB1FC5F2D30058CFBE /* ArcGIS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8851CCE91FC5F2D30058CFBE /* ArcGIS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B71723BE1CF88EEA0077BB5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71723BD1CF88EEA0077BB5B /* AppDelegate.swift */; };
+		B71723C01CF88EF40077BB5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71723BF1CF88EF40077BB5B /* ViewController.swift */; };
+		B71723C31CF88F040077BB5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71723C11CF88F040077BB5B /* Main.storyboard */; };
+		B71723C51CF88F0F0077BB5B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71723C41CF88F0F0077BB5B /* Images.xcassets */; };
+		B71723C81CF88F1B0077BB5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B71723C61CF88F1B0077BB5B /* LaunchScreen.xib */; };
+		D9B8A65A220DBD550071CEE2 /* LowerManhattan.slpk in Resources */ = {isa = PBXBuildFile; fileRef = D9B8A659220DBD550071CEE2 /* LowerManhattan.slpk */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8851CCEC1FC5F2D30058CFBE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8851CCEB1FC5F2D30058CFBE /* ArcGIS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3E15A1411AE84CEA00A7D40D /* ARVRDemo-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARVRDemo-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8851CCE91FC5F2D30058CFBE /* ArcGIS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ArcGIS.framework; path = ../../../../../../Library/SDKs/ArcGIS/iOS/Frameworks/Dynamic/ArcGIS.framework; sourceTree = SOURCE_ROOT; };
+		B71723BD1CF88EEA0077BB5B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "ARVRDemo-Swift/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		B71723BF1CF88EF40077BB5B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "ARVRDemo-Swift/ViewController.swift"; sourceTree = SOURCE_ROOT; };
+		B71723C21CF88F040077BB5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "ARVRDemo-Swift/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		B71723C41CF88F0F0077BB5B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "ARVRDemo-Swift/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		B71723C71CF88F1B0077BB5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "ARVRDemo-Swift/Base.lproj/LaunchScreen.xib"; sourceTree = SOURCE_ROOT; };
+		B71723C91CF88F330077BB5B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "ARVRDemo-Swift/Info.plist"; sourceTree = SOURCE_ROOT; };
+		D9B8A659220DBD550071CEE2 /* LowerManhattan.slpk */ = {isa = PBXFileReference; lastKnownFileType = file; path = LowerManhattan.slpk; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E15A13E1AE84CEA00A7D40D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8851CCEA1FC5F2D30058CFBE /* ArcGIS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E15A1381AE84CEA00A7D40D = {
+			isa = PBXGroup;
+			children = (
+				8851CCE91FC5F2D30058CFBE /* ArcGIS.framework */,
+				3E15A1431AE84CEA00A7D40D /* ARVRDemo-Swift */,
+				3E15A1421AE84CEA00A7D40D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E15A1421AE84CEA00A7D40D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E15A1411AE84CEA00A7D40D /* ARVRDemo-Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E15A1431AE84CEA00A7D40D /* ARVRDemo-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				B71723BD1CF88EEA0077BB5B /* AppDelegate.swift */,
+				B71723BF1CF88EF40077BB5B /* ViewController.swift */,
+				B71723C11CF88F040077BB5B /* Main.storyboard */,
+				B71723C41CF88F0F0077BB5B /* Images.xcassets */,
+				B71723C61CF88F1B0077BB5B /* LaunchScreen.xib */,
+				D9B8A659220DBD550071CEE2 /* LowerManhattan.slpk */,
+				3E15A1441AE84CEA00A7D40D /* Supporting Files */,
+			);
+			path = "ARVRDemo-Swift";
+			sourceTree = "<group>";
+		};
+		3E15A1441AE84CEA00A7D40D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B71723C91CF88F330077BB5B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E15A1401AE84CEA00A7D40D /* ARVRDemo-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E15A1601AE84CEA00A7D40D /* Build configuration list for PBXNativeTarget "ARVRDemo-Swift" */;
+			buildPhases = (
+				3E15A13D1AE84CEA00A7D40D /* Sources */,
+				3E15A13E1AE84CEA00A7D40D /* Frameworks */,
+				3E15A13F1AE84CEA00A7D40D /* Resources */,
+				8851CCEC1FC5F2D30058CFBE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ARVRDemo-Swift";
+			productName = "MapViewDemo-Swift";
+			productReference = 3E15A1411AE84CEA00A7D40D /* ARVRDemo-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E15A1391AE84CEA00A7D40D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Esri;
+				TargetAttributes = {
+					3E15A1401AE84CEA00A7D40D = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = J8UEUYLV27;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 3E15A13C1AE84CEA00A7D40D /* Build configuration list for PBXProject "ARVRDemo-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E15A1381AE84CEA00A7D40D;
+			productRefGroup = 3E15A1421AE84CEA00A7D40D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E15A1401AE84CEA00A7D40D /* ARVRDemo-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E15A13F1AE84CEA00A7D40D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B71723C81CF88F1B0077BB5B /* LaunchScreen.xib in Resources */,
+				B71723C51CF88F0F0077BB5B /* Images.xcassets in Resources */,
+				D9B8A65A220DBD550071CEE2 /* LowerManhattan.slpk in Resources */,
+				B71723C31CF88F040077BB5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E15A13D1AE84CEA00A7D40D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B71723BE1CF88EEA0077BB5B /* AppDelegate.swift in Sources */,
+				B71723C01CF88EF40077BB5B /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B71723C11CF88F040077BB5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B71723C21CF88F040077BB5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B71723C61CF88F1B0077BB5B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B71723C71CF88F1B0077BB5B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E15A15E1AE84CEA00A7D40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(USER_LIBRARY_DIR)/SDKs/ArcGIS/iOS/Frameworks/Dynamic";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E15A15F1AE84CEA00A7D40D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(USER_LIBRARY_DIR)/SDKs/ArcGIS/iOS/Frameworks/Dynamic";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E15A1611AE84CEA00A7D40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J8UEUYLV27;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/SDKs/ArcGIS/iOS/Frameworks/Dynamic",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/ARVRDemo-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esri.ARVRDemo-Swift.yale.ev2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3E15A1621AE84CEA00A7D40D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J8UEUYLV27;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/SDKs/ArcGIS/iOS/Frameworks/Dynamic",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/ARVRDemo-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esri.ARVRDemo-Swift.yale.ev2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E15A13C1AE84CEA00A7D40D /* Build configuration list for PBXProject "ARVRDemo-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E15A15E1AE84CEA00A7D40D /* Debug */,
+				3E15A15F1AE84CEA00A7D40D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E15A1601AE84CEA00A7D40D /* Build configuration list for PBXNativeTarget "ARVRDemo-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E15A1611AE84CEA00A7D40D /* Debug */,
+				3E15A1621AE84CEA00A7D40D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E15A1391AE84CEA00A7D40D /* Project object */;
+}
