@@ -15,7 +15,7 @@
 import UIKit
 import ArcGIS
 
-let initialZ = 0.0
+let initialZ = 8.0
 
 let appCenter = AGSPointMakeWGS84(40.72804090913764, -73.98498999999998)
 
@@ -36,13 +36,13 @@ class ViewController: UIViewController {
     let graphicsOverlay = AGSGraphicsOverlay()
     
     var seaGraphic: AGSGraphic = {
+        // Convert to Web Mercator so that manipulation ends up being in meters
         let ptWM = AGSGeometryEngine.projectGeometry(appCenter, to: .webMercator())!
         let buffer = AGSGeometryEngine.bufferGeometry(ptWM, byDistance: 5000)!
-        //        let s = AGSSimpleMarkerSceneSymbol(style: .sphere, color: .red, height: 100, width: 100, depth: 100, anchorPosition: .center)
-        let sPoly = AGSSimpleFillSymbol(style: .solid, color: UIColor.blue.withAlphaComponent(0.4), outline: nil)
-        //        let g1 = AGSGraphic(geometry: AGSGeometryEngine.geometry(bySettingZ: 8, in: pt), symbol: s, attributes: nil)
-        let buffer2 = AGSGeometryEngine.geometry(bySettingZ: 8, in: buffer)
-        return AGSGraphic(geometry: buffer2, symbol: sPoly, attributes: nil)
+        let raisedBuffer = AGSGeometryEngine.geometry(bySettingZ: initialZ, in: buffer)
+        
+        let symbol = AGSSimpleFillSymbol(style: .solid, color: UIColor.blue.withAlphaComponent(0.4), outline: nil)
+        return AGSGraphic(geometry: raisedBuffer, symbol: symbol, attributes: nil)
     }()
     
     var floodHeight = initialZ {
