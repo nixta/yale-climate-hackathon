@@ -69,16 +69,17 @@ class ViewController: UIViewController {
         surface.isEnabled = true
         scene.baseSurface = surface
 
-
         // Open the local scene I exported from Open Street Map
         let sceneLayer = AGSArcGISSceneLayer(name: "LowerManhattan")
         sceneLayer.layerID = "EastVillage"
         scene.operationalLayers.add(sceneLayer)
         
-        //set the sceneView's UIView.backgroundColor to clear to show the camera view underneath
-        sceneView.backgroundColor = .clear
+
+
+
         // Enable AR for scene view.
         sceneView.isARModeEnabled = true;
+        sceneView.backgroundColor = .clear
 
         // Add a place to hold the flood height polygon - we'll lift the polygon up and down
         // using the slider and the surface model we added earlier will limit it appropriately
@@ -103,6 +104,9 @@ class ViewController: UIViewController {
             print("motion data source started with error: " + "\(error?.localizedDescription ?? "no error")")
         }
         
+
+
+
         //set the scene on the scene view
         sceneView.scene = scene
     }
